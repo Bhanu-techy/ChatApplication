@@ -1,7 +1,11 @@
 
 const sessions = [
   { id: 1, 'title': "Python Questions",
-     'conversation':[{"no":11, "question":"What is a dictionary in Python", "answer":"A dictionary stores data as key-value pairs and is unordered and mutable."},
+     'conversation':[
+    {"no":11, 
+      "question":"What is a dictionary in Python",
+      "answer":"A dictionary stores data as key-value pairs and is unordered and mutable."
+    },
     {
       "id": 12,
       "question": "What is a lambda function?",

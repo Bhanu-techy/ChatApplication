@@ -10,12 +10,12 @@ app.use(cors());
 app.use(express.json());
 
 
-app.get("/sessions", (req, res) => {
+app.get("/api/sessions", (req, res) => {
   const session=sessions.map(each =>({id:each.id, title: each.title}))
   res.json(session);
 });
 
-app.get("/session/:id", (req, res) => {
+app.get("/api/session/:id", (req, res) => {
   const session = sessions.find(u => u.id === parseInt(req.params.id));
   if (session) {
     res.json(session)

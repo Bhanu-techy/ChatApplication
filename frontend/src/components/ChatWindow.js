@@ -16,7 +16,7 @@ function ChatWindow() {
     },[sessionId])
 
   return (
-    <div className='p-3'>
+    <div className='p-3 w-3/4'>
         <ul className='flex flex-col'>
             {data.map(each =>(
                 <li key={each.id}>

@@ -14,11 +14,11 @@ function Sidebar() {
     },[])
 
   return (
-    <div className='w-1/4 bg-gray-300 h-full flex justify-center items-start p-3'>
-        <ul className='flex flex-col justify-center items-cetnter w-full'>
+    <div className='w-1/4 bg-gray-300 h-full flex justify-center items-center'>
+        <ul className='flex flex-col justify-center items-cetnter w-full p-0 m-0 p-1'>
             {sessions.map(each => (
                 <Link key={each.id} to={`/chat/${each.id}`}>
-                <li key={each.id} className=''>{each.title}</li>
+                <li key={each.id} className='border border-solid border-black h-[30px] rounded m-1 w-[90%] text-center'>{each.title}</li>
                 </Link>
             ))}
         </ul>
