@@ -109,6 +109,7 @@ In `src/App.js`, use `BrowserRouter` and `Routes` to set up two main paths:
 
 Organize your project files logically for easy navigation.
 
+```
 - **Chat-app-project/** (root folder)
     -**backend/** : Backend folder.
         -**node_modules/**: Auto-generated dependencies (don't edit).
@@ -133,6 +134,7 @@ Organize your project files logically for easy navigation.
     - package.json: Lists dependencies and scripts.
     - tailwind.config.js
     - [README.md](http://readme.md/): Project documentation.
+```
 
 This structure separates concerns: Components for UI, src for logic, and root for config.
 
