@@ -65,17 +65,6 @@ npm install express cors
 | /api/session/:id (GET) | Returns the full mock conversation history for a given session ID.      |
 |/api/chat/:id (POST)    |Accepts a user question and returns a mock structured (tabular) response.|
 
-
-| Columns       | Type    |
-| ------------- | ------- |
-| district_id   | INTEGER |
-| district_name | TEXT    |
-| state_id      | INTEGER |
-| cases         | INTEGER |
-| cured         | INTEGER |
-| active        | INTEGER |
-| deaths        | INTEGER |
-
 ### Phase 2: Frontend Setup (React and Styling)
 
 The frontend will handle all UI logic, routing, and API calls.
@@ -109,7 +98,6 @@ In `src/App.js`, use `BrowserRouter` and `Routes` to set up two main paths:
 
 Organize your project files logically for easy navigation.
 
-```
 - **Chat-app-project/** (root folder)
     -**backend/** : Backend folder.
         -**node_modules/**: Auto-generated dependencies (don't edit).
@@ -122,10 +110,10 @@ Organize your project files logically for easy navigation.
         - **src/**: Main source code.
             - **components/**: Reusable UI parts.
                 - Sidebar.js: Collapsible session panel
-        |       - ThemeToggle.js: Handles Light/Dark switching
-        |       - ChatInput.js: Component for user text input
-        |       - TableResponse.js: Renders structured data beautifully
-        |       - AnswerFeedback.js: Like/Dislike buttons
+               - ThemeToggle.js: Handles Light/Dark switching
+               - ChatInput.js: Component for user text input
+               - TableResponse.js: Renders structured data beautifully
+               - AnswerFeedback.js: Like/Dislike buttons
             - **assets/**: Optional folder for images or styles.
             - App.js: Main app component that ties everything together.
             - index.js: Entry point for rendering the app.
@@ -134,7 +122,7 @@ Organize your project files logically for easy navigation.
     - package.json: Lists dependencies and scripts.
     - tailwind.config.js
     - [README.md](http://readme.md/): Project documentation.
-```
+
 
 This structure separates concerns: Components for UI, src for logic, and root for config.
 
