@@ -22,14 +22,14 @@ function Sidebar({darkTheme}) {
     const darkcss = darkTheme && "bg-white text-gray-900"
 
   return (
-    <div className={`w-[24vw] bg-gray-200 h-screen flex flex-col h-[93vh] ${darkTheme && 'bg-gray-600 text-gray-900'}`}>
+    <div className={`w-[24vw] bg-gray-200 h-screen flex flex-col h-[93vh] justify-center items-center p-2 ${darkTheme && 'bg-gray-600 text-gray-900'}`}>
         <Link to="/">
-        <button onClick={onClickNewChat} className={`border border-solid border-black h-[30px] rounded text-center w-[90%] m-1 ${darkcss}`}>New chat</button>
+        <button onClick={onClickNewChat} className={`border border-solid border-black h-[30px] rounded text-center w-[150px] m-1 sm:w-[100px] ${darkcss}`}>New chat</button>
         </Link>
-        <ul className='flex flex-col justify-center items-cetnter w-full p-1 self-center mt-auto mb-auto'>
+        <ul className='flex flex-col justify-center items-center w-full p-1 self-center mt-auto mb-auto'>
             {sessions.map(each => (
-                <Link key={each.id} to={`/chat/${each.id}`} className='m-1 w-[90%]'>
-                <li key={each.id} className={`border border-solid border-black h-[30px] rounded text-center ${darkcss}`}>{each.title}</li>
+                <Link key={each.id} to={`/chat/${each.id}`} className='m-1 text-center'>
+                <li key={each.id} className={`border border-solid border-black h-[30px] w-[150px] rounded text-center xs:w-[10px] ${darkcss}`}>{each.title}</li>
                 </Link>
             ))}
         </ul>

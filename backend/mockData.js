@@ -128,7 +128,7 @@ const sessions = [
       },]
     },{
       "id": 3,
-      "question": "What are varibles",
+      "question": "What are variables",
       "answer": "A variable is a container used to store data values.",
           "tabluarResponse" : [{
         id:1,
