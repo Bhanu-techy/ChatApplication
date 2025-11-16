@@ -211,7 +211,7 @@ What is a lambda function
 ```text
 what is dom.
 What are events.
-What are varibales
+What are variables
 ```
 <br/>
 </details>
