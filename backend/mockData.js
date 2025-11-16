@@ -8,13 +8,15 @@ const sessions = [
     },
     {
       "id": 12,
-      "question": "What is a lambda function?",
+      "question": "What is a lambda function",
       "answer": "A lambda function is a small anonymous function defined using the lambda keyword."
     },
     {
       "id": 13,
-      "question": "What are Python modules?",
-      "answer": "Modules are files containing Python code (functions, classes) that can be imported into other programs."
+      "question": "What are Python modules",
+      "answer": "Modules are files containing Python code (functions, classes) that can be imported into other programs.",
+      "concepts" :["purpose", "Benefits", "Example"],
+      "Explanation":["To organise code, reuse logic, avoid repetition", "Resuability, better structure modular development", "import match -> math.sqrt(25)"]
     },
     {
       "id": 14,

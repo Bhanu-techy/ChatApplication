@@ -25,12 +25,12 @@ app.get("/api/session/:id", (req, res) => {
   }
 });
 
-app.get("/api/chat/:chatId", (req, res)=>{
-  const {chatId} = req.params
-  const chat = sessions.find(session =>
-  session.conversation.find(chat => chat.no === parseInt(chatId))
-);
-  res.json(chat)
+app.post("/api/chat/:id", (req, res)=>{
+  const {id} = req.params
+  const {question} = req.body
+  const session = sessions.find(u => u.id === parseInt(id));
+  const ans=session.conversation.filter(que => que.question.toLowerCase() === question.toLowerCase())
+  res.json(ans)
 })
 
 app.listen(PORT, () => {

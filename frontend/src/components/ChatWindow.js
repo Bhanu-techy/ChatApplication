@@ -8,7 +8,7 @@ function ChatWindow() {
 
     useEffect(()=>{
         const getSDetails = async ()=>{
-            const response = await fetch(`https://chatapp-tusz.onrender.com/session/${sessionId}`)
+            const response = await fetch(`https://chatapp-tusz.onrender.com/api/session/${sessionId}`)
             const details = await response.json()
             setData(details.conversation)
         }
