@@ -104,25 +104,25 @@ const sessions = [
       "answer": "Handling user interacting with the Document Object Model (DOM) to dynamically change web page content and style.",
       "tabluarResponse" : [{
             id:1,
-        "Event Type": "Click Event",
+        "Feature": "Click Event",
         "Description": "Triggered when a user clicks an element.",
         "Example": "onclick, addEventListener('click')"
       },
       {
         id:2,
-        "Event Type": "Mouse Events",
+        "Feature": "Mouse Events",
         "Description": "Actions performed with the mouse.",
         "Example": "mouseover, mouseout, mousemove"
       },
       {
         id:3,
-        "Event Type": "Keyboard Events",
+        "Feature": "Keyboard Events",
         "Description": "Triggered when a user presses or releases a key.",
         "Example": "keydown, keyup, keypress"
       },
       {
         id:4,
-        "Event Type": "Form Events",
+        "Feature": "Form Events",
         "Description": "Triggered by form actions.",
         "Example": "submit, change, input"
       },]
